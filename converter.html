@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rates</title>
+    <link rel="stylesheet" href="./assets/css/converter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <p>Seleccione monedas y cantidad, luego presione "Convertir".</p>
+        <div class="exchange-form">
+          <label for="base-currency">Moneda base:</label>
+          <select id="base-currency">
+            <option value="COP">Peso Colombiano</option>
+            <option value="USD">Dólar Estadounidense</option>
+            <option value="CAD">Dólar Canadiense</option>
+            <option value="GBP">Libra Esterlina</option>
+            <option value="CHF">Franco Suizo</option>
+            <option value="JPY">Yen Japonés</option>
+            <option value="EUR">Euro</option>
+            <option value="KWD">Dinar Kuwaití</option>
+          </select>
+
+          <label for="target-currency">Moneda objetivo:</label>
+          <select id="target-currency">
+            <option value="COP">Peso Colombiano</option>
+            <option value="USD">Dólar Estadounidense</option>
+            <option value="CAD">Dólar Canadiense</option>
+            <option value="GBP">Libra Esterlina</option>
+            <option value="CHF">Franco Suizo</option>
+            <option value="JPY">Yen Japonés</option>
+            <option value="EUR">Euro</option>
+            <option value="KWD">Dinar Kuwaití</option>
+          </select>
+
+          <label for="amount">Cantidad:</label>
+          <input type="number" id="amount" value="1" />
+
+          <button id="convert">Convertir</button>
+        </div>
+        <div class="result">
+          <h2>Resultado</h2>
+          <p id="result-text"></p>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2024 Currency Exchange. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+    <script src="./assets/js/converter.js"></script>
+  </body>
+</html>
