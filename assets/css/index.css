@@ -46,7 +46,7 @@ section {
 /* Contenedor principal de los formularios */
 .form-container {
   position: relative;
-  width: 510px;
+  max-width: 510px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -60,7 +60,7 @@ section {
 
 .login-box {
   width: 100%;
-  padding: 30px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,6 +149,27 @@ button {
   font-weight: 500;
 }
 
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000;
+  font-weight: 500;
+}
+
+.form-button:hover {
+  background: #ddd;
+}
+
 .register-link {
   font-size: 0.9em;
   color: #fff;
@@ -168,6 +189,9 @@ button {
 
 /* Estilos del botón para cerrar el formulario */
 .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   width: 100px;
   height: 35px;
